@@ -6,6 +6,8 @@ public class Main{
     static final int TAM_MAX = 20;
     static int[] numeros = new int[TAM_MAX];
     static int usados = 0;
+
+    //aqui est la main normal
     public static void main(String[] args) {
         System.out.println("1.Gestor de Numeros");
         System.out.println("2.Conversor Multitipo");
@@ -13,6 +15,33 @@ public class Main{
         System.out.println("4.Gestion de Tareas");
         System.out.println("5.Adivinar el numero");
 
+    }
+
+    //aqui es el switch para interracionar con el menu principal 
+    static void SeleccionarOpcion(){
+        int seleccion=leer.nextInt();
+
+        switch(seleccion){
+            case 1:
+                inicio_gestor_de_numeros();
+            break;
+
+            case 2:
+                iniciar_aplicacion_conversor();
+            break;
+
+            case 3:
+                System.out.println("Sin funcionamiento el programador no estuvo disponible");
+            break;
+
+            case 4:
+
+            break;
+
+            case 5:
+                
+            break;
+        }
     }
 
     // metodos ultilzados en cada opcion
@@ -94,7 +123,7 @@ public class Main{
         return opcion;
     }
 
-    static void iniciar_aplicacion() {
+    static void iniciar_aplicacion_conversor() {
         int opcion;
 
         do {
@@ -121,6 +150,8 @@ public class Main{
     }
 
     //Gestor de Numeros
+
+
     static void inicio_gestor_de_numeros() {
         int opcion;
         do {
@@ -155,8 +186,8 @@ public class Main{
         System.out.println("4. Buscar número");
         System.out.println("0. Volver");
         System.out.print("Elige una opción: ");
-        int opcion = sc.nextInt();
-        sc.nextLine(); 
+        int opcion = leer.nextInt();
+        leer.nextLine(); 
         return opcion;
     }
     // 1. Añadir número
