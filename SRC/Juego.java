@@ -76,6 +76,8 @@ public class Juego {
             }
 
         } while (opcion != 0);
+
+        System.out.println("PROGRAMA CERRADO");
     }
     
 }
