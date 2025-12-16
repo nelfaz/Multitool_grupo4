@@ -7,6 +7,9 @@ public class Main{
     static int[] numeros = new int[TAM_MAX];
     static int usados = 0;
 
+    //Varable de juego 
+    static int ultimosIntentos = 0;
+
     //aqui est la main normal
     public static void main(String[] args) {
         System.out.println("1.Gestor de Numeros");
@@ -39,7 +42,7 @@ public class Main{
             break;
 
             case 5:
-                
+
             break;
         }
     }
@@ -252,6 +255,82 @@ public class Main{
         if (!encontrado) {
             System.out.println("El número no está en el array.");
         }
+    }
+
+
+    //JUEGOS
+    public static void juegoMain() {
+        int opcion;
+
+        do {
+            // ----SUBMEÚ----
+            System.out.println("1. Jugar (número entre 1 y 50)");
+            System.out.println("2. Mostrar intentos del último juego");
+            System.out.println("0. Volver");
+            
+            if(leer.hasNextInt()){
+                opcion = leer.nextInt();
+                leer.nextLine(); 
+            } else {
+                opcion = -1;
+                leer.next(); 
+            }
+
+            if (opcion == 1) {
+                
+                int num , intentos,numJugador;
+                intentos=numJugador=0;
+        
+                num = (int) ((Math.random() * (50))+1);
+        
+                System.out.println("ADIVINA EL NUMERO DEL 1 AL 50");
+                
+        
+        
+                do{
+                    
+                    
+                     System.out.print("INTRODUCE EL NÚMERO: ");
+                    if(leer.hasNextInt()){
+                        
+                       
+                       
+                        numJugador=leer.nextInt();
+                        leer.nextLine();
+                    
+                    
+                    
+                    if(numJugador!=num){
+                        
+                        System.out.println("INTÉNTALO OTRA VEZ");
+                        System.out.println();
+                    }
+                    
+                    intentos++;}
+                    else{
+                        System.out.println("VALOR INTRODUCIDO NO VÁLIDO");
+                        leer.next();
+                        }
+        
+                }while(numJugador!=num);
+        
+                System.out.println();
+                System.out.println("HAS ACERTADO");
+                System.out.println();
+                System.out.println("INTENTOS: "+intentos); 
+                
+                
+                // Guardamos los intentos al terminar la partida
+                ultimosIntentos = intentos;
+
+            } else if (opcion == 2) {
+                System.out.println("Intentos del último juego: " + ultimosIntentos);
+                System.out.println();
+            }
+
+        } while (opcion != 0);
+
+        System.out.println("PROGRAMA CERRADO");
     }
 
 }
