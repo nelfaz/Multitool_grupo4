@@ -8,13 +8,13 @@ public class GestorDeNUmeros {
     static int usados = 0;
 
     public static void main(String[] args) {
-        iniciar_aplicacion();
+        inicio_gestor_de_numeros();
     }
 
-    static void iniciar_aplicacion() {
+    static void inicio_gestor_de_numeros() {
         int opcion;
         do {
-            opcion = mostrarMenuYLeerOpcion();
+            opcion = menuGestiondeNúmeros();
             switch (opcion) {
                 case 1:
                     anadirNumeroUI();
@@ -37,7 +37,7 @@ public class GestorDeNUmeros {
             System.out.println();
         } while (opcion != 0);
     }
-    static int mostrarMenuYLeerOpcion() {
+    static int menuGestiondeNúmeros() {
         System.out.println("GESTOR DE NÚMEROS");
         System.out.println("1. Añadir número");
         System.out.println("2. Listar números");
