@@ -37,3 +37,21 @@ Juego:Es un minijuego de adivinar un nº entre el  1 y el 50
 1.- Jugar(1-50)
 2.- Mostrar intentos del último juego
 Cabe destacar que para este apartado el programa generará un nº aleatorio entre  1-50 (math.random), el usuario irá probando hasta acertar y se registra los intentos del último juego
+
+--#Ejecución#--
+Al darle al botón de iniciar programa, se nos abrirá un menu en la terminal en el cual tendremos estas opciones:
+"Inicio"
+"1.Gestor de numeros"
+"2.Conversor multitipo"
+"3.Analizador de texto"
+"4.Gestión de tareas"
+"5.Adivinar el numero"
+"0 Salir"
+Dependiendo de a lo que le introduzcamos ocurriran diferentes cosas, si le das al 1 sale el gestor de numeros, al 2 conversor multitipo...
+Dandole al 1, nos sale el menu del gestor de números el cual mencionamos anteriormente
+Dandole al 2, nos sale el menu del gestor de números el cual mencionamos anteriormente
+Dandole al 3, nos sale el menu del gestor de números el cual mencionamos anteriormente
+Dandole al 4, nos sale el menu del gestor de números el cual mencionamos anteriormente
+Dandole al 5, nos sale el menu del gestor de números el cual mencionamos anteriormente
+
+Al darle al 0, nos saldra un mensaje de "Saliendo del programa" y finalizará su ejecución
