@@ -77,7 +77,5 @@ public class Juego {
 
         } while (opcion != 0);
     }
-    public static void main(String[] args) {
-        juegoMain();
-    }
+    
 }
