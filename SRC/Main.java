@@ -12,16 +12,19 @@ public class Main{
 
     //aqui est la main normal
     public static void main(String[] args) {
-        System.out.println("1.Gestor de Numeros");
-        System.out.println("2.Conversor Multitipo");
-        System.out.println("3.Analixador de tetxto");
-        System.out.println("4.Gestion de Tareas");
-        System.out.println("5.Adivinar el numero");
+        SeleccionarOpcion();
 
     }
 
     //aqui es el switch para interracionar con el menu principal 
     static void SeleccionarOpcion(){
+        System.out.println("1.Gestor de Numeros");
+        System.out.println("2.Conversor Multitipo");
+        System.out.println("3.Analixador de tetxto");
+        System.out.println("4.Gestion de Tareas");
+        System.out.println("5.Adivinar el numero");
+        System.out.println("");
+        System.out.println("Elige la opcion que desea ejecutar");
         int seleccion=leer.nextInt();
 
         switch(seleccion){
@@ -146,6 +149,7 @@ public class Main{
                     break;
                 case 0:
                     System.out.println("Saliendo del programa...");
+                    SeleccionarOpcion();
                     break;
                 default:
                     System.out.println("Opción no válida.\n");
