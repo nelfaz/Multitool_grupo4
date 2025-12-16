@@ -42,14 +42,16 @@ public class Main{
             break;
 
             case 5:
-
+                juegoMain();
             break;
         }
     }
 
     // metodos ultilzados en cada opcion
 
-    // conversor
+    //CONVERSOR 
+
+
     public static void C_to_F(int temp, int tipo){
         double conv;
         if (tipo == 1) { // C a F
@@ -152,7 +154,7 @@ public class Main{
         } while (opcion != 0);
     }
 
-    //Gestor de Numeros
+    //GeESTOR DE NUMEROS 
 
 
     static void inicio_gestor_de_numeros() {
