@@ -18,11 +18,15 @@ public class Main{
 
     //aqui es el switch para interracionar con el menu principal 
     static void SeleccionarOpcion(){
+        System.out.println("");
+        System.out.println("Inicio");
+        System.out.println("");
         System.out.println("1.Gestor de Numeros");
         System.out.println("2.Conversor Multitipo");
         System.out.println("3.Analixador de tetxto");
         System.out.println("4.Gestion de Tareas");
         System.out.println("5.Adivinar el numero");
+        System.out.println("0.Salir del todo");
         System.out.println("");
         System.out.println("Elige la opcion que desea ejecutar");
         int seleccion=leer.nextInt();
@@ -46,6 +50,10 @@ public class Main{
 
             case 5:
                 juegoMain();
+            break;
+
+            case 0:
+                System.out.println("Saliendo del proograma");
             break;
         }
     }
@@ -148,7 +156,7 @@ public class Main{
                     K_to_L_UI();
                     break;
                 case 0:
-                    System.out.println("Saliendo del programa...");
+                    System.out.println("Volviendo a inicio..");
                     SeleccionarOpcion();
                     break;
                 default:
@@ -179,7 +187,7 @@ public class Main{
                     buscarNumeroUI();
                     break;
                 case 0:
-                    System.out.println("Finalizando programa...");
+                    System.out.println("Volviendo a inicio...");
                     break;
                 default:
                     System.out.println("Opción inexistente, inténtelo de nuevo");
@@ -336,7 +344,7 @@ public class Main{
 
         } while (opcion != 0);
 
-        System.out.println("PROGRAMA CERRADO");
+        System.out.println("VOLVIENDO A INICIO");
     }
 
 }
