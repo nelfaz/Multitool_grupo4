@@ -25,7 +25,7 @@ public class Tareas {
                 break;
 
             case 2:
-
+                ListarTareas();
                 break;
 
             case 3:
@@ -51,6 +51,17 @@ public class Tareas {
     static void ListarTareas() {
         for (int i = 0; i < tareas.length; i++) {
             System.out.println(i + 1 + "º." + tareas[i]);
+        }
+    }
+
+    static void BuscarTarea() {
+        String letra = sc.nextLine();
+
+        for (int i = 0; i < tareas.length; i++) {
+            if (tareas[i].toLowerCase().contains(letra)) {
+                System.out.println("Esta la palabra que buscas");
+                System.out.println(tareas[i]);
+            }
         }
     }
 
