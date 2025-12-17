@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Tareas {
     static Scanner sc = new Scanner(System.in);
+    static String[] tareas = new String[15];
 
     public static void main(String[] args) {
 
@@ -36,4 +37,15 @@ public class Tareas {
                 break;
         }
     }
+
+    static void AñadirTareas() {
+        System.out.println("Cuantas tareas queires añadir?");
+
+        int count = sc.nextInt();
+        for (int i = 0; i < count && i < tareas.length; i++) {
+            System.out.println("Que tarea quieres agregar?");
+            tareas[i] = sc.nextLine();
+        }
+    }
+
 }
