@@ -21,7 +21,7 @@ public class Tareas {
 
         switch (seleccion) {
             case 1:
-
+                AñadirTareas();
                 break;
 
             case 2:
@@ -45,6 +45,12 @@ public class Tareas {
         for (int i = 0; i < count && i < tareas.length; i++) {
             System.out.println("Que tarea quieres agregar?");
             tareas[i] = sc.nextLine();
+        }
+    }
+
+    static void ListarTareas() {
+        for (int i = 0; i < tareas.length; i++) {
+            System.out.println(i + 1 + "º." + tareas[i]);
         }
     }
 
