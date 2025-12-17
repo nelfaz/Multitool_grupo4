@@ -11,6 +11,9 @@ public class Main {
     // Varable de juego
     static int ultimosIntentos = 0;
 
+    // VAriable Tareas
+    static String[] tareas = new String[15];
+
     // aqui est la main normal
     public static void main(String[] args) {
         SeleccionarOpcion();
@@ -345,5 +348,63 @@ public class Main {
     }
 
     // TAREAS
+
+    static void menuTareas() {
+        System.out.println("");
+        System.out.println("1.Añadir Tarea");
+        System.out.println("2.Listar Tareas");
+        System.out.println("3.Buscar Palabra");
+        System.out.println("0.Volver");
+        System.out.println("");
+        System.out.println("Que opcion quieres hacer?");
+
+        int seleccion = leer.nextInt();
+
+        switch (seleccion) {
+            case 1:
+                AñadirTareas();
+                break;
+
+            case 2:
+                ListarTareas();
+                break;
+
+            case 3:
+                BuscarTarea();
+                break;
+
+            case 0:
+                System.out.println("Volviendo a inicio...");
+                System.out.println("");
+                SeleccionarOpcion();
+                break;
+        }
+    }
+
+    static void AñadirTareas() {
+        System.out.println("Cuantas tareas queires añadir?");
+
+        for (int i = 0; i < tareas.length; i++) {
+            System.out.println("Que tarea quieres agregar?");
+            tareas[i] = leer.nextLine();
+        }
+    }
+
+    static void ListarTareas() {
+        for (int i = 0; i < tareas.length; i++) {
+            System.out.println(i + 1 + "º." + tareas[i]);
+        }
+    }
+
+    static void BuscarTarea() {
+        String letra = leer.nextLine();
+
+        for (int i = 0; i < tareas.length; i++) {
+            if (tareas[i].toLowerCase().contains(letra)) {
+                System.out.println("Esta la palabra que buscas");
+                System.out.println(tareas[i]);
+            }
+        }
+    }
 
 }
