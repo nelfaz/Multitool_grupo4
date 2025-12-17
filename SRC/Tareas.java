@@ -29,7 +29,7 @@ public class Tareas {
                 break;
 
             case 3:
-
+                BuscarTarea();
                 break;
 
             case 0:
