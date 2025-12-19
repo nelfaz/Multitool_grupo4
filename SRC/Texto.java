@@ -20,7 +20,7 @@ public class Texto {
         int opción = leer.nextInt();
         switch (opción) {
             case 1:
-                contarVocales();
+                contarVocales(leer);
                 break;
             case 2:
                 contarPalabras();
@@ -33,10 +33,24 @@ public class Texto {
             default:
                 System.out.println("Opción no válida.");
                 break;
-
-            default:
-                break;
         }
 
     }
+    // OPCIÓN 1 RESUELTA
+    public static void contarVocales(Scanner leer) {
+        System.out.println("Introduce un texto:");
+        String texto = leer.nextLine().toLowerCase();
+
+        int contador = 0;
+
+        for (int i = 0; i < texto.length(); i++) {
+            char c = texto.charAt(i);
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                contador++;
+            }
+        }
+
+        System.out.println("El texto contiene " + contador + " vocales.");
+    }
+
 }
