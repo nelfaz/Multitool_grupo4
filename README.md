@@ -55,15 +55,20 @@ los nº añadidos anteriormente, la 3ra opción es ver el nº maximo(el más gra
 consiste en buscar un nº en concreto
 
 Dandole al 2, nos sale el menu del conversor multitipo, este nos presenta 3 opciones de conversión, la primera es pasar de grados celsius a 
-fahrenheit y viceversa, la 2da opción consiste en pasar de metros a pies y viceversa y la tercera, la última, consiste en pasar de kilogramos a 
-libras y viceversa; el usuario introduce un valor y luego elige entre 1 o 2, las cuales estan especificadas; un ejemplo de esto sería "1 para 
-grados y 2 para fahrenheit"
+fahrenheit y viceversa, la 2da opción consiste en pasar de metros a pies y viceversa y la tercera, la última, consiste en pasar de 
+kilogramos a libras y viceversa; el usuario introduce un valor y luego elige entre 1 o 2, las cuales estan especificadas; un ejemplo de esto 
+sería "1 para grados y 2 para fahrenheit"
 
-Dandole al 3, nos sale el menu del analizador de texto, este nos presenta 3 opciones, la primera es contar todas las vocales del texto introducido y mostrarlas, la segunda opción es contar cuantas palabras tiene el texto y la 3ra opción, la última, consiste en indicar cual es la palabra más larga encontrada en el texto 
-introducido
+Dandole al 3, nos sale el menu del analizador de texto, este nos presenta 3 opciones, la primera es contar todas las vocales del texto 
+introducido y mostrarlas, la segunda opción es contar cuantas palabras tiene el texto y la 3ra opción, la última, consiste en indicar cual 
+es la palabra más larga encontrada en el texto introducido
 
-Dandole al 4, nos sale el menu del gestión de tareas, este nos presenta 3 opciones, la primera es añadir una nueva tarea, la 2da opción es listar las tareas existentes (en caso de que no haya seguramente no mostrará nada o pondra un texto de "no hay tareas existentes"), y la 3ra opción, la última, es buscar una palabra que este escrita en alguna de las tareas; el máx de tareas es de 15
+Dandole al 4, nos sale el menu del gestión de tareas, este nos presenta 3 opciones, la primera es añadir una nueva tarea, la 2da opción 
+es listar las tareas existentes (en caso de que no haya seguramente no mostrará nada o pondra un texto de "no hay tareas existentes"), 
+y la 3ra opción, la última, es buscar una palabra que este escrita en alguna de las tareas; el máx de tareas es de 15
 
-Dandole al 5, nos sale el menu de adivinar el numero,este nos presenta 2 opciones, la primera es "jugar", lo que es sinónimo de iniciar el juego de adivinar del 1 al 50, este estará preguntando hasta que acertemos el nº elegido de forma aleatoria, la 2da opción, la última, nos mostrará el nº de intentos del anterior juego; cada vez que se acabe el juego, se mostrará el nº de intentos 
+Dandole al 5, nos sale el menu de adivinar el numero,este nos presenta 2 opciones, la primera es "jugar", lo que es sinónimo de iniciar 
+el juego de adivinar del 1 al 50, este estará preguntando hasta que acertemos el nº elegido de forma aleatoria, la 2da opción, la última,
+ nos mostrará el nº de intentos del anterior juego; cada vez que se acabe el juego, se mostrará el nº de intentos 
 
 Al darle al 0, nos saldra un mensaje de "Saliendo del programa" y finalizará su ejecución
