@@ -49,7 +49,7 @@ public class Main {
                 break;
 
             case 4:
-
+                menuTareas();
                 break;
 
             case 5:
@@ -382,28 +382,32 @@ public class Main {
     }
 
     static void AñadirTareas() {
-        System.out.println("Cuantas tareas queires añadir?");
-
+        System.out.println("Añade 15 tareas");
+        tareas[0] = leer.nextLine();
         for (int i = 0; i < tareas.length; i++) {
-            System.out.println("Que tarea quieres agregar?");
             tareas[i] = leer.nextLine();
+            System.out.println("Agregada");
         }
+        menuTareas();
     }
 
     static void ListarTareas() {
         for (int i = 0; i < tareas.length; i++) {
             System.out.println(i + 1 + "º." + tareas[i]);
         }
+        menuTareas();
     }
 
     static void BuscarTarea() {
+        System.out.println("Busca aqui:");
         String letra = leer.nextLine();
 
-        for (int i = 0; i < tareas.length; i++) {
-            if (tareas[i].toLowerCase().contains(letra)) {
+        for (int i = 0; i < tareas.length - 1; i++) {
+            if (tareas[i] != null && tareas[i].toLowerCase().contains(letra.toLowerCase())) {
                 System.out.println("Esta la palabra que buscas");
                 System.out.println(tareas[i]);
             }
+            menuTareas();
         }
     }
 
