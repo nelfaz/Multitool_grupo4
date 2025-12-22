@@ -109,7 +109,7 @@ public class GestorDeNUmeros {
             }
         }
         if (!encontrado) {
-            System.out.println("El número no está en el array.");
+            System.out.println("El número no está en el array. Intentelo con otro número");
         }
     }
 }
